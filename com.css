@@ -1,0 +1,42 @@
+.ttl-bg{
+    background: url("photo/会社案内.jpg");
+}
+.wd90 img{
+    width: 60%;
+    margin: auto;
+}
+.wd90 p{
+    margin-bottom: 1.4em;
+    letter-spacing: 0.2em;
+    line-height: 1.6;
+}
+.txright{
+    text-align: right;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: auto;
+    width: 75%;
+    border: 2px solid #e9e9e9;
+}
+table tr{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+table th{
+    padding: 1em 1.5em;
+    background-color: #F6F6F6;
+    color: #006714;
+    font-family: "こぶりなゴシック W6 JIS2004", YuGothic, 游ゴシック, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+table td{
+    padding: 1em 1.5em;
+    background-color: #fff;
+    border-top: 2px solid #e9e9e9;
+    border-bottom: 2px solid #e9e9e9;
+}
+table td:last-child{
+    border-bottom: none;
+}

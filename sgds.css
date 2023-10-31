@@ -1,0 +1,317 @@
+@charset "UTF-8";
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+li{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.page-ttl{
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+.ttl-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+    background: url("photo/sdgsメイン.jpg") no-repeat;
+}
+.inner-xl{
+    width: 90%;
+    margin: auto;
+}
+.inner-xl h2{
+    line-height: 1.4;
+}
+.page-txt{
+    font-family: A1明朝, serif;
+    font-size: 200%;
+    color: #fff;
+}
+.page-mini{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: normal;
+    color: #fff;
+}
+.crumb{
+    position: relative;
+    padding: 6px 0;
+    font-size: 81.25%;
+}
+.inner{
+    display: flex;
+    align-items: center;
+   padding: 0 50px;
+}
+.crumb a{
+    display: inline-block;
+    padding-bottom: .3em;
+    color: #00a154;
+    line-height: 1;
+    border-bottom: 1px solid;
+}
+@media screen and (max-width: 650px){
+    .btn-child{
+        flex-direction: column;
+    }
+    .btn2{
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+    .btn2:nth-of-type(2){
+        margin: 0;
+    }
+}
+.btn-child{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3%;
+}
+.lps-btn{
+    padding: 80px 0;
+}
+.btn2 a{
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    min-width: 300px;
+    max-width: 400px;
+    color: #fff;
+    text-align: center;
+    background-color: #00A154;
+    font-family: "こぶりなゴシック W6 JIS2004", YuGothic, 游ゴシック, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+.btn2 a:hover{
+    background-color: gray;
+}
+.btn2 span{
+    position: relative;
+    display: block;
+    padding: 18px 32px;
+}
+.btn2 span::before{
+    content: '';
+    position: absolute;
+    top: calc(50% - .5px);
+    right: 16px;
+    display: block;
+    width: 32px;
+    height: 1px;
+    background-color: #fff;
+}
+.lps-sec{
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background: url("photo/sdgs背景.png");
+    background-color: #F3FBF9;
+}
+.lps-sec h2,
+.lps-sec2 h2{
+    font-family: A1明朝, serif;
+    position: relative;
+    z-index: 1;
+    letter-spacing: .06em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.lps-sec h2 span,
+.lps-sec2 span{
+    font-family: A1明朝, serif;
+    font-size: 130%;
+    color: #003333;
+    line-height: 1.25;
+    letter-spacing: .15em;
+}
+.flex-col{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    column-gap: 6%;
+    width: 90%;
+}
+@media screen and (max-width: 800px){
+    .flex-col{
+        flex-direction: column;
+    }
+    .col-item{
+        margin-bottom: 10%;
+    }
+    .img-detail img{
+        width: 80%;
+        margin: auto;
+    }
+    .col-txt br{
+        display: none;
+    }
+}
+.col-item{
+    width: 100%;
+}
+.img-detail{
+    margin: auto;
+}
+.col-txt{
+    padding-top: 24px;
+    margin: auto;
+}
+.col-txt h4{
+    font-family: A1明朝, serif;
+    position: relative;
+    z-index: 1;
+    letter-spacing: .03em;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.col-txt h4::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(50% - 40px / 2);
+    z-index: -1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #52e09c;
+    filter: blur(28px);
+}
+.col-txt h4 span{
+    font-size: 150%;
+    font-weight: 450;
+    line-height: 1.5;
+    color: #003333;
+}
+.img-and-txt{
+    margin-top: 80px;
+}
+@media screen and (max-width: 800px){
+    .flex-acter{
+        flex-direction: column;
+    }
+    .acter-img{
+       margin: auto;
+       margin-bottom: 6%;
+    }
+}
+.flex-acter{
+    display: flex;
+    align-items: center;
+    column-gap: 8%;
+    width: 90%;
+    margin: auto;
+}
+.acter-img{
+    width: 80%;
+}
+.mce-content{
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #fbfbfb;
+    padding: 30px;
+    border-radius: 6px;
+    line-height: 2;
+}
+.mce-content ul li{
+    position: relative;
+    margin: 0;
+    border-bottom: none;
+    padding-left: 1em;
+    padding-bottom: .5em;
+    letter-spacing: 0.2em;
+}
+.mce-content ul li::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #00a154;
+}
+.land-part{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    column-gap: 3%;
+}
+@media screen and(max-width: 800px){
+    .land-part{
+        flex-direction: column;
+    }
+}
+.mg2em{
+    margin-bottom: 2em;
+}
+.col-txt p{
+    letter-spacing: 0.1em;
+    line-height: 1.8;
+}
+.lps-sec2{
+    position: relative;
+    padding: 110px 0;
+}
+.lps-sec2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: block;
+    width: 1px;
+    height: 80px;
+    margin: auto;
+    background-color: #00A154;
+}
